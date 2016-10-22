@@ -18,8 +18,8 @@ export default React.createClass({
 		return (
 			<div id="listContainer">
     	  <ul>
-        	{data.map(function(item) {
-        		return <li><Link to="/profiles">{item.name.first}</Link></li>
+        	{data.map(function(item, i) {
+        		return <li id={i}><Link to="/profiles">{item.name.first}</Link></li>
         	})}	  
         </ul>
       </div>
