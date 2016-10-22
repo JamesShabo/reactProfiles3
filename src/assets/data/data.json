@@ -1,5 +1,5 @@
 [  
-  {  
+  { "id":1, 
     "gender":"male",
     "name":{  
       "title":"mr",
@@ -25,10 +25,6 @@
     "dob":1430498648,
     "phone":"953-845-0361",
     "cell":"998-627-0904",
-    "id":{  
-      "name":"",
-      "value":null
-    },
     "picture":{  
       "large":"https://randomuser.me/api/portraits/men/12.jpg",
       "medium":"https://randomuser.me/api/portraits/med/men/12.jpg",
@@ -36,7 +32,7 @@
     },
     "nat":"CA"
   },
-  {  
+  { "id":2, 
     "gender":"male",
     "name":{  
       "title":"mr",
@@ -62,10 +58,6 @@
     "dob":748963407,
     "phone":"763-296-4886",
     "cell":"833-301-1425",
-    "id":{  
-      "name":"",
-      "value":null
-    },
     "picture":{  
       "large":"https://randomuser.me/api/portraits/men/54.jpg",
       "medium":"https://randomuser.me/api/portraits/med/men/54.jpg",
@@ -73,7 +65,7 @@
     },
     "nat":"CA"
   },
-  {  
+  { "id":3, 
     "gender":"female",
     "name":{  
       "title":"miss",
@@ -99,10 +91,6 @@
     "dob":1173436501,
     "phone":"(802)-060-4739",
     "cell":"(630)-356-9595",
-    "id":{  
-      "name":"",
-      "value":null
-    },
     "picture":{  
       "large":"https://randomuser.me/api/portraits/women/86.jpg",
       "medium":"https://randomuser.me/api/portraits/med/women/86.jpg",
@@ -110,7 +98,7 @@
     },
     "nat":"TR"
   },
-  {  
+  { "id":4, 
     "gender":"male",
     "name":{  
       "title":"mr",
@@ -136,10 +124,6 @@
     "dob":598451318,
     "phone":"(062)-393-1749",
     "cell":"(223)-333-7790",
-    "id":{  
-      "name":"SSN",
-      "value":"887-88-4191"
-    },
     "picture":{  
       "large":"https://randomuser.me/api/portraits/men/62.jpg",
       "medium":"https://randomuser.me/api/portraits/med/men/62.jpg",
@@ -147,7 +131,7 @@
     },
     "nat":"US"
   },
-  {  
+  { "id":5, 
     "gender":"male",
     "name":{  
       "title":"mr",
@@ -173,10 +157,6 @@
     "dob":632459562,
     "phone":"015396 21783",
     "cell":"0760-738-537",
-    "id":{  
-      "name":"NINO",
-      "value":"RZ 57 22 93 I"
-    },
     "picture":{  
       "large":"https://randomuser.me/api/portraits/men/91.jpg",
       "medium":"https://randomuser.me/api/portraits/med/men/91.jpg",

@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router'
-import data from 'assets/data/data.json'
+import React from 'react';
+import { Link } from 'react-router';
+import data from 'assets/data/data.json';
 
 // var namesHTML = ""
 // var names = data.map(function(item) {
@@ -11,15 +11,17 @@ import data from 'assets/data/data.json'
 
 // console.log(data[0].name.first)
 
-var string = ""
+
 
 export default React.createClass({
 	render: function() {
+	
 		return (
 			<div id="listContainer">
     	  <ul>
-        	{data.map(function(item, i) {
-        		return <li id={i}><Link to="/profiles">{item.name.first}</Link></li>
+        	{data.map(function(item,i) {
+        			
+        		return <li key={'list-' + i}><Link to={"/profiles/" + item.id}>{item.name.first}</Link></li>
         	})}	  
         </ul>
       </div>

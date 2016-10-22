@@ -13,12 +13,13 @@ import Home from 'ui/home'
 //Content 
 import List from 'ui/list'
 import Profiles from 'ui/profiles'
+import ProfilesDetail from 'ui/profilesDetail'
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route component={Layout}>
       <Route path="/" component={List}/>
-      <Route path="/profiles" component={Profiles}/>
+      <Route path="/profiles/:id" component={ProfilesDetail}/>
     </Route>
   </Router>
 ), document.getElementById('app'));
