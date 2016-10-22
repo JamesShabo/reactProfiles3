@@ -1,0 +1,36 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
+#container {
+	height: 450px;
+	width: 700px;
+	border: 1px solid #CCCCCC;
+	margin: auto;
+}
+
+#header {
+	border-bottom: 1px solid #CCCCCC;
+	width: 100%;
+}
+
+.headerValue {
+	display: inline-block;
+
+}
+
+#content {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+#listContainer, #profileContainer {
+	border: 1px solid #CCCCCC;
+	height: 400px;
+	width: 325px;
+}
