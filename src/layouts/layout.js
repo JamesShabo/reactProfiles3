@@ -6,7 +6,7 @@ export default React.createClass({
     return (
       <div id="container">
         <div id="header">
-          <div class="headerValue">List View</div>
+          <div className="headerValue">List View</div>
         </div>
         <div id="content">
           {this.props.children}
