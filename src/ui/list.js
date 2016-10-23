@@ -2,29 +2,21 @@ import React from 'react';
 import { Link } from 'react-router';
 import data from 'assets/data/data.json';
 
-// var namesHTML = ""
-// var names = data.map(function(item) {
-// 		`<li>${item.name.first}</li>`
-// })
-
-// console.log(names)
-
-// console.log(data[0].name.first)
-
 
 
 export default React.createClass({
 	render: function() {
 	
 		return (
-			<div id="listContainer">
-    	  <ul>
-        	{data.map(function(item,i) {
-        			
-        		return <li key={'list-' + i}><Link to={"/profiles/" + item.id}>{item.name.first}</Link></li>
-        	})}	  
-        </ul>
-      </div>
+            <div>
+                <div id="listHeader">My Peeps</div>
+    			<div id="listContainer">
+                    {data.map(function(item,i) {
+                    		
+                    	return <div key={'list-' + i} className="listItem"><img className="avatar" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png"/><Link to={"/profiles/" + item.id} className="listName">{item.name.first + " " + item.name.last}</Link></div>
+                    })}	  
+                </div>
+            </div>
 		)
 	}
 })

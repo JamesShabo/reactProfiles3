@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	font-family: Arial;
 }
 
 *, *:after, *:before {
@@ -14,8 +15,13 @@ html {
 }
 
 #header {
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #E3E7E9;
 	width: 100%;
+	height: 50px;
+	background: #F5F8FA;
+	padding: 13px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .headerValue {
@@ -26,11 +32,50 @@ html {
 #content {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 15px;
 }
 
 #listContainer, #profileContainer {
-	border: 1px solid #CCCCCC;
-	height: 400px;
-	width: 100%;
+	height: 319px;
+	width: 419px;
 }
+
+#listHeader {
+	width: 419px;
+	height: 50px;
+	background: #81BC39;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	border-bottom: 2px solid #649C1A;
+	font-size: 18px;
+}
+
+.listItem {
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 0px;
+	padding-left: 14px;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+.listName {
+	line-height: 40px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.avatar {
+	height: 25px;
+	width: 25px;
+	border-radius: 100%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+

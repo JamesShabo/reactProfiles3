@@ -8,7 +8,7 @@ export default React.createClass({
     return (
       <div id="container">
         <div id="header">
-          <div className="headerValue">List View</div>
+          Contacts
         </div>
         <div id="content">
           {this.props.children}
