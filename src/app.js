@@ -12,7 +12,6 @@ import Home from 'ui/home'
 
 //Content 
 import List from 'ui/list'
-import Profiles from 'ui/profiles'
 import ProfilesDetail from 'ui/profilesDetail'
 
 ReactDOM.render((

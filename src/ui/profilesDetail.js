@@ -3,19 +3,19 @@ import { Link } from 'react-router'
 import data from 'assets/data/data.json'
 
 export default React.createClass({
-	componentWillMount: function() {
-		console.log('props', this.props)
-	},
 	render: function() {
 
 		return (
-			<ul>
-				{data.filter((item) => {
-					return item.id === Number(this.props.params.id)
-				}).map(function(obj){
-					return <li key={obj.id}>{obj.name.first}</li>
-				})}
-			</ul>
+			<div>
+				<ul>
+					{data.filter(function(item) {
+						return item.id === Number(this.props.params.id)
+					}.bind(this)).map(function(obj){
+						return <li key={obj.id}>{obj.name.first}</li>
+					})}
+				</ul>
+				<Link to="/">Back to list!</Link>
+			</div>
 		)
 	}
 })
