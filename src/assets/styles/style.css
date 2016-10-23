@@ -8,7 +8,7 @@ html {
 }
 
 #container {
-	height: 450px;
+	height: 466px;
 	width: 450px;
 	border: 1px solid #CCCCCC;
 	margin: auto;
@@ -61,12 +61,22 @@ html {
 	line-height: 50px;
 }
 
+.profileItem{
+	vertical-align: middle;
+	font-size: 13px;
+	text-decoration: none;
+	color: #000000;
+	padding-left: 0px;
+}
+
+
 .listName {
 	line-height: 40px;
 	font-size: 13px;
 	text-decoration: none;
 	color: #000000;
 }
+
 
 .avatar {
 	height: 25px;
@@ -76,6 +86,36 @@ html {
 	vertical-align: middle;
 }
 
+.avatarBanner {
+	height: 112px;
+	width: 112px;
+	border-radius: 100%;
+	margin: auto;
+	position: absolute;
+	top: 43px;
+	left: 147px;
+}
 
+.profileBanner {
+	background: #A7D076;
+	width: 419px;
+	height: 200px;
+	position: relative;
+}
 
+.fa {
+	font-size: 40px;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: black;
+}
+
+.faProfile{
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.noDecoration {
+	text-decoration: none;
+}
 
