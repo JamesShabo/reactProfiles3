@@ -1,49 +1,80 @@
 import React from 'react'
 import { Link } from 'react-router'
-import data from 'assets/data/data.json'
+import { getContact } from 'api/contacts'
 import 'font-awesome/css/font-awesome.css'
 
-export default React.createClass({
+
+const ContactViewContainer = React.createClass({
+	getInitialState: function() {
+		return {
+			img: "",
+			fname: "",
+			lname: "",
+			email: "",
+			phone: "",
+			city: "",
+			state: ""
+		}	
+	},
+
+	componentWillMount: function() {
+		var id = this.props.params.id
+
+		getContact(id).then(resp => {
+			this.setState({
+				img: resp.data.picture.large,
+				fname: resp.data.name.first,
+				lname: resp.data.name.last,
+				email: resp.data.email,
+				phone: resp.data.phone,
+				city: resp.data.city,
+				state: resp.data.state
+			})
+		})
+	},
+
 	render: function() {	
 
 		return (
-			<div>
-				{data.filter(function(item) {
-					return item.id === Number(this.props.params.id)
-					}.bind(this)).map(function(obj){
-						return (
-							<div>
-								<div className="profileBanner">
-									<img className="avatarBanner" src={obj.picture.large}/>
-									<Link to="/" className="noDecoration">
-										<i className="fa fa-arrow-left" aria-hidden="true"></i>
-									</Link>
-								</div>	
-								<div>
-									<div className="listItem profileItem"><i className="fa fa-user faProfile" aria-hidden="true"></i>{obj.name.first + " " + obj.name.last}</div>
-									<div className="listItem profileItem"><i className="fa fa-envelope faProfile" aria-hidden="true"></i>{obj.email}</div>
-									<div className="listItem profileItem"><i className="fa fa-mobile faProfile" aria-hidden="true"></i>{obj.cell}</div>
-									<div className="listItem profileItem"><i className="fa fa-globe faProfile" aria-hidden="true"></i>{obj.location.city + ", " + obj.location.state}</div>
-								</div>
-							</div>
-						) 	
-				})}
-			</div>
+			<ContactView contact={this.state}/>
 		)
 	}
 })
 
+const ContactView = React.createClass({
+	goBack: function() {
+
+	},
+
+	render: function() {
+		return (
+			<div>
+				<div className="profileBanner">
+					<img className="avatarBanner" src={this.props.contact.img}/>
+					<Link to="/" className="noDecoration">
+						<i className="fa fa-arrow-left" aria-hidden="true"></i>
+					</Link>
+				</div>	
+				<div>
+					<div className="listItem profileItem"><i className="fa fa-user faProfile" aria-hidden="true"></i>{this.props.contact.fname + " " + this.props.contact.lname}</div>
+					<div className="listItem profileItem"><i className="fa fa-envelope faProfile" aria-hidden="true"></i>{this.props.contact.email}</div>
+					<div className="listItem profileItem"><i className="fa fa-mobile faProfile" aria-hidden="true"></i>{this.props.contact.phone}</div>
+					<div className="listItem profileItem"><i className="fa fa-globe faProfile" aria-hidden="true"></i>{this.props.contact.city + ", " + this.props.contact.state}</div>
+				</div>
+			</div>
+		) 	
+	}
+})
+
+
+export default ContactViewContainer
 
 
 
 
-// <li>{item.email}</li>
-// <li>{item.phone}</li>
-// <li>{item.city} + ", " + {item.state}</li>
 
-// <div className="profileBanner">
-// 					<img className="avatarBanner" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png"/>
-// 					<Link to="/" className="noDecoration">
-// 						<i className="fa fa-arrow-left" aria-hidden="true"></i>
-// 					</Link>
-// 				</div>	
+
+
+
+
+
