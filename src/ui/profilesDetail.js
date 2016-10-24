@@ -27,8 +27,8 @@ const ContactViewContainer = React.createClass({
 				lname: resp.data.name.last,
 				email: resp.data.email,
 				phone: resp.data.phone,
-				city: resp.data.city,
-				state: resp.data.state
+				city: resp.data.location.city,
+				state: resp.data.location.state
 			})
 		})
 	},
@@ -42,9 +42,6 @@ const ContactViewContainer = React.createClass({
 })
 
 const ContactView = React.createClass({
-	goBack: function() {
-
-	},
 
 	render: function() {
 		return (
