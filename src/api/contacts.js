@@ -13,3 +13,7 @@ export function getContact(id) {
 export function deleteContact(id) {
 	return axios.delete(`contacts/${id}`)
 }
+
+export function createContact(obj) {
+	return axios.post("contacts", obj)
+}

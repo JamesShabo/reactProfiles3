@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { getContacts, deleteContact } from 'api/contacts'
+import { getContacts, deleteContact, createContact } from 'api/contacts'
 
 
 
@@ -53,10 +53,15 @@ const ContactList = React.createClass({
                                 <img className="avatar" src={item.picture.thumbnail}/>
                                 <Link to={"/profiles/" + item.id} className="listName">{item.name.first + " " + item.name.last}</Link>
                                 <button id={`d${item.id}`} onClick={this.deleteContact}>Delete</button>
+                                {console.log(item)}
                             </div>
-
                         )
                     })}   
+                </div>
+                <div>
+                    <Link to="/contactForm/">
+                        <button>create contact</button>
+                    </Link>
                 </div>
             </div>
         )
@@ -64,3 +69,12 @@ const ContactList = React.createClass({
 })
 
 export default ContactListContainer 
+
+
+
+
+
+
+
+
+
