@@ -51,7 +51,7 @@ const ContactList = React.createClass({
                             <div key={item.id} className="listItem">
                                 <img className="avatar" src={item.picture.thumbnail}/>
                                 <Link to={"/profiles/" + item.id} className="listName">{item.name.first + " " + item.name.last}</Link>
-                                <button id={`d${item.id}`} onClick={this.deleteContact}>Delete</button>
+                                <button className="delButton" id={`d${item.id}`} onClick={this.deleteContact}>Delete</button>
                             </div>
                         )
                     })}   

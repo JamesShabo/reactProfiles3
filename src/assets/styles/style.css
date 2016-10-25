@@ -119,3 +119,18 @@ html {
 	text-decoration: none;
 }
 
+.delButton {
+	height: 25px;
+	width: 100px;
+	float: right;
+	margin-top: 10px;
+	border-radius: 5%;
+	color: #3c3838;
+	font-weight: bold;
+}
+
+.delButton:hover {
+	background: red;
+	color: white;
+	font-weight: bold;
+}
