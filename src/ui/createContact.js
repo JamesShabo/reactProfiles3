@@ -9,10 +9,14 @@ export default React.createClass({
         		fname: "",
 				lname: "",	
         	},
+			phone: "",
 			email: "",
 			location: {
 				city: "",
 				state: ""
+			},
+			picture: {
+				large: ""
 			}
 
 		}	
@@ -41,9 +45,11 @@ export default React.createClass({
 				<input onChange={(e) => this.update("fname",e,"name")} type="text" placeholder="first name"></input>
 				<input onChange={(e) => this.update("lname",e,"name")} type="text" placeholder="last name"></input>
 				<input onChange={(e) => this.update("email",e)} type="text" placeholder="email"></input>
+				<input onChange={(e) => this.update("phone",e)} type="text" placeholder="phone"></input>
 				<input onChange={(e) => this.update("city",e, "location")} type="text" placeholder="city"></input>
 				<input onChange={(e) => this.update("state",e, "location")} type="text" placeholder="state"></input>
-				<button onClick={this.postToAPI}>submit</button>
+				<input onChange={(e) => this.update("large",e, "picture")} type="file"></input>
+				<button onClick={this.postToAPI}>create new contact</button>
 			</form>
 		)
 	}
