@@ -23,8 +23,8 @@ const ContactViewContainer = React.createClass({
 		getContact(id).then(resp => {
 			this.setState({
 				img: resp.data.picture.large,
-				fname: resp.data.name.first,
-				lname: resp.data.name.last,
+				first: resp.data.name.first,
+				last: resp.data.name.last,
 				email: resp.data.email,
 				phone: resp.data.phone,
 				city: resp.data.location.city,
@@ -53,7 +53,7 @@ const ContactView = React.createClass({
 					</Link>
 				</div>	
 				<div>
-					<div className="listItem profileItem"><i className="fa fa-user faProfile" aria-hidden="true"></i>{this.props.contact.fname + " " + this.props.contact.lname}</div>
+					<div className="listItem profileItem"><i className="fa fa-user faProfile" aria-hidden="true"></i>{this.props.contact.first + " " + this.props.contact.last}</div>
 					<div className="listItem profileItem"><i className="fa fa-envelope faProfile" aria-hidden="true"></i>{this.props.contact.email}</div>
 					<div className="listItem profileItem"><i className="fa fa-mobile faProfile" aria-hidden="true"></i>{this.props.contact.phone}</div>
 					<div className="listItem profileItem"><i className="fa fa-globe faProfile" aria-hidden="true"></i>{this.props.contact.city + ", " + this.props.contact.state}</div>

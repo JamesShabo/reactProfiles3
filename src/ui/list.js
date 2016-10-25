@@ -37,7 +37,7 @@ const ContactList = React.createClass({
         var id = e.target.id.substr(1)
 
         deleteContact(id).then(resp => {
-            this.props.rerender
+            this.props.rerender()
         })
     },
 
@@ -47,9 +47,8 @@ const ContactList = React.createClass({
                 <div id="listHeader">My Peeps</div>
                 <div id="listContainer">
                     {this.props.contacts.map(item => {
-                        console.log('thumbnail', item.picture.thumbnail)
                         return (
-                            <div className="listItem">
+                            <div key={item.id} className="listItem">
                                 <img className="avatar" src={item.picture.thumbnail}/>
                                 <Link to={"/profiles/" + item.id} className="listName">{item.name.first + " " + item.name.last}</Link>
                                 <button id={`d${item.id}`} onClick={this.deleteContact}>Delete</button>
