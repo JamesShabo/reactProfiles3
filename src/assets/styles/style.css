@@ -38,6 +38,7 @@ html {
 #listContainer, #profileContainer {
 	height: 319px;
 	width: 419px;
+	overflow: auto;
 }
 
 #listHeader {
@@ -133,4 +134,14 @@ html {
 	background: red;
 	color: white;
 	font-weight: bold;
+}
+
+.createButton {
+	height: 35px;
+	width: 125px;
+	margin-left: 156px;
+	background: #81BC39;
+	font-weight: bold;
+	margin-top: -6px;
+	color: white;
 }

@@ -58,7 +58,7 @@ const ContactList = React.createClass({
                 </div>
                 <div>
                     <Link to="/contactForm/">
-                        <button>create contact</button>
+                        <button className="createButton">Create Contact</button>
                     </Link>
                 </div>
             </div>

@@ -135,40 +135,6 @@
         "thumbnail": "https://randomuser.me/api/portraits/thumb/men/62.jpg"
       },
       "nat": "US"
-    },
-    {
-      "id": 5,
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "wesley",
-        "last": "miles"
-      },
-      "location": {
-        "street": "4667 grove road",
-        "city": "leicester",
-        "state": "kent",
-        "postcode": "VG9N 9ET"
-      },
-      "email": "wesley.miles@example.com",
-      "login": {
-        "username": "whitekoala474",
-        "password": "sluggo",
-        "salt": "6sPxs3mz",
-        "md5": "ee5c5c1b832d68c68b0a3d6b2ee8dd13",
-        "sha1": "0084f7f0bb316eb0831d5b9344a104b3f33086d8",
-        "sha256": "7750fc72be837adc03c9c971c2457f8d9353d95f9baa62136f640c40db3c7ffb"
-      },
-      "registered": 1427877441,
-      "dob": 632459562,
-      "phone": "015396 21783",
-      "cell": "0760-738-537",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/91.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/91.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/91.jpg"
-      },
-      "nat": "GB"
     }
   ]
 }
