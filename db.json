@@ -171,123 +171,50 @@
       "nat": "GB"
     },
     {
-      "function (partialState, callback) {\n\t  !(typeof partialState ": "== 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;\n\t  this.updater.enqueueSetState(this, partialState);\n\t  if (callback) {\n\t    this.updater.enqueueCallback(this, callback, 'setState');\n\t  }\n\t}",
+      "fname": "tim",
+      "lname": "lee",
+      "email": "tim.lee@60can.org",
       "id": 6
     },
     {
-      "function (partialState, callback) {\n\t  !(typeof partialState ": "== 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;\n\t  this.updater.enqueueSetState(this, partialState);\n\t  if (callback) {\n\t    this.updater.enqueueCallback(this, callback, 'setState');\n\t  }\n\t}",
+      "name": {
+        "fname": "",
+        "lname": ""
+      },
+      "email": "goose",
+      "fname": "duck",
+      "lname": "duck",
       "id": 7
     },
     {
-      "function (partialState, callback) {\n\t  !(typeof partialState ": "== 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;\n\t  this.updater.enqueueSetState(this, partialState);\n\t  if (callback) {\n\t    this.updater.enqueueCallback(this, callback, 'setState');\n\t  }\n\t}",
+      "name": {
+        "fname": "",
+        "lname": ""
+      },
+      "email": "mufasa",
+      "name.fname": "simba",
+      "name.lname": "nala",
       "id": 8
     },
     {
-      "function (partialState, callback) {\n\t  !(typeof partialState ": "== 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;\n\t  this.updater.enqueueSetState(this, partialState);\n\t  if (callback) {\n\t    this.updater.enqueueCallback(this, callback, 'setState');\n\t  }\n\t}",
+      "name": {
+        "fname": "yogi",
+        "lname": "berra"
+      },
+      "email": "smirnoff",
       "id": 9
     },
     {
-      "function (partialState, callback) {\n\t  !(typeof partialState ": "== 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;\n\t  this.updater.enqueueSetState(this, partialState);\n\t  if (callback) {\n\t    this.updater.enqueueCallback(this, callback, 'setState');\n\t  }\n\t}",
+      "name": {
+        "fname": "tim",
+        "lname": "lee"
+      },
+      "email": "tim.le13@la",
+      "location": {
+        "city": "here",
+        "state": "nevada"
+      },
       "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "tim ": "",
-      "id": 14
-    },
-    {
-      "tim ": "",
-      "id": 15
-    },
-    {
-      "tim ": "",
-      "id": 16
-    },
-    {
-      "tim": "",
-      "id": 17
-    },
-    {
-      "tim": "",
-      "id": 18
-    },
-    {
-      "tim": "",
-      "id": 19
-    },
-    {
-      "tim": "",
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "tim": "",
-      "id": 23
-    },
-    {
-      "tim": "",
-      "id": 24
-    },
-    {
-      "tim": "",
-      "id": 25
-    },
-    {
-      "tim": "",
-      "id": 26
-    },
-    {
-      "tim": "",
-      "id": 27
-    },
-    {
-      "tim": "",
-      "id": 28
-    },
-    {
-      "tim": "",
-      "id": 29
-    },
-    {
-      "tim": "",
-      "id": 30
-    },
-    {
-      "tim": "",
-      "id": 31
-    },
-    {
-      "tim": "",
-      "id": 32
-    },
-    {
-      "tim2": "",
-      "id": 33
-    },
-    {
-      "fname": "becca",
-      "id": 34
-    },
-    {
-      "fname": "quinn",
-      "id": 35
-    },
-    {
-      "fname": "tim",
-      "id": 36
     }
   ]
 }

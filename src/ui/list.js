@@ -17,7 +17,6 @@ const ContactListContainer = React.createClass({
 
     rerender: function() {
         getContacts().then(resp =>  {
-            console.log(resp)
             this.setState({
                 contacts: resp.data
             })
@@ -48,12 +47,12 @@ const ContactList = React.createClass({
                 <div id="listHeader">My Peeps</div>
                 <div id="listContainer">
                     {this.props.contacts.map(item => {
+                        console.log('thumbnail', item.picture.thumbnail)
                         return (
                             <div className="listItem">
                                 <img className="avatar" src={item.picture.thumbnail}/>
                                 <Link to={"/profiles/" + item.id} className="listName">{item.name.first + " " + item.name.last}</Link>
                                 <button id={`d${item.id}`} onClick={this.deleteContact}>Delete</button>
-                                {console.log(item)}
                             </div>
                         )
                     })}   
