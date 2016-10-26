@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 
-require('assets/styles/style.css')
+import 'assets/styles/style.css'
+
 
 // Layouts
 import Layout from 'layouts/layout';
-
-// Home
-import Home from 'ui/home'
 
 //Content 
 import List from 'ui/list'
