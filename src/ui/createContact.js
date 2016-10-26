@@ -49,15 +49,19 @@ export default React.createClass({
 
     render: function() {
 		return (
-			<form>
-				<input id="first" onChange={this.update} type="text" placeholder="first name"></input>
-				<input id="last" onChange={this.update} type="text" placeholder="last name"></input>
-				<input id="email" onChange={this.update} type="text" placeholder="email"></input>
-				<input id="phone" onChange={this.update} type="text" placeholder="phone"></input>
-				<input id="city" onChange={this.update} type="text" placeholder="city"></input>
-				<input id="state" onChange={this.update} type="text" placeholder="state"></input>
-				<input id="large" onChange={this.update} type="file"></input>
-				<button onClick={this.postToAPI}>create new contact</button>
+			<form className="form">
+				<div id="listHeader">New Contact Form</div>
+				<input className="formInput" id="first" onChange={this.update} type="text" placeholder="First Name"></input>
+				<input className="formInput" id="last" onChange={this.update} type="text" placeholder="Last Name"></input>
+				<input className="formInput" id="email" onChange={this.update} type="text" placeholder="Email"></input>
+				<input className="formInput" id="phone" onChange={this.update} type="text" placeholder="Phone"></input>
+				<input className="formInput" id="city" onChange={this.update} type="text" placeholder="City"></input>
+				<input className="formInput" id="state" onChange={this.update} type="text" placeholder="State"></input>
+				<input className="formInput" id="large" onChange={this.update} type="file"></input>
+				
+				<div className="createButtonDiv">	
+					<button className="createButton" onClick={this.postToAPI}>Create New Contact</button>
+				</div>	
 			</form>
 		)
 	}
