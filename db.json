@@ -1,40 +1,6 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "daniel",
-        "last": "denys"
-      },
-      "location": {
-        "street": "7283 coastal highway",
-        "city": "greenwood",
-        "state": "nunavut",
-        "postcode": 61421
-      },
-      "email": "daniel.denys@example.com",
-      "login": {
-        "username": "blackkoala996",
-        "password": "pete",
-        "salt": "Vcg8QGgR",
-        "md5": "743fc2ad7b61cda63602c296aaab335b",
-        "sha1": "e2eb940512b95e9f5babe67098ea12392a82eb22",
-        "sha256": "0bb54373a66f4173fd5f1a8620f3e1e68b214973cfa3a8bdba0847f0a3bd263a"
-      },
-      "registered": 946532156,
-      "dob": 1430498648,
-      "phone": "953-845-0361",
-      "cell": "998-627-0904",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/12.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/12.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/12.jpg"
-      },
-      "nat": "CA"
-    },
-    {
       "id": 2,
       "gender": "male",
       "name": {
@@ -135,6 +101,22 @@
         "thumbnail": "https://randomuser.me/api/portraits/thumb/men/62.jpg"
       },
       "nat": "US"
+    },
+    {
+      "name": {
+        "first": "Tim",
+        "last": "Lee"
+      },
+      "phone": 5417291108,
+      "email": "tim.wenyang.lee@gmail.com",
+      "location": {
+        "city": "Washington",
+        "state": "DC"
+      },
+      "picture": {
+        "large": "C:\\fakepath\\tim-lee-orlando-cropped.jpg"
+      },
+      "id": 5
     }
   ]
 }

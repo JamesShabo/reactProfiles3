@@ -1,26 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, hashHistory } from 'react-router'
 
-import 'assets/styles/style.css'
+import 'assets/styles/style.css' //BRINGING IN STYLES
 
+//LAYOUT - A COMPONENT THAT ACTS AS YOUR LAYOUT FOR OTHER COMPONENTS
+import Layout from 'layouts/layout'
 
-// Layouts
-import Layout from 'layouts/layout';
-
-//Content 
+//COMPONENT CONTENT
 import List from 'ui/list'
-import ProfilesDetail from 'ui/profilesDetail'
-import CreateContact from 'ui/createContact'
+import Form from 'ui/createContact'
+import Profile from 'ui/profilesDetail'
 
-ReactDOM.render((
-  <Router history={hashHistory}>
-    <Route component={Layout}>
-      <Route path="/" component={List}/>
-      <Route path="/profiles/:id" component={ProfilesDetail}/>
-      <Route path="/contactForm/" component={CreateContact}/>
-    </Route>
-  </Router>
-), document.getElementById('app'));
+
+//<ROUTER> TAGS ARE USED FOR REACT-ROUTER. THEY DEFINE PATHS AND THE COMPONENTS THOSE PATHS CORRESPOND TO. 
+//THERE ARE TWO TYPES OF ROUTER TAGS, <ROUTER> AND <ROUTE>
+//the .render METHOD HAS TWO ARGUMENTS, THE FIRST BEING THE ROUTES AND THE SECOND BEING WHERE IN THE HTML THE ROUTES RENDER
+ReactDOM.render(( 
+	<Router history={hashHistory}> 
+		<Route component={Layout}>
+			<Route path="/" component={List}/>
+			<Route path="/profiles/:id" component={Profile}/>
+			<Route path="/contactForm/" component={Form}/>
+		</Route>
+	</Router>), document.getElementById("app"))
+
+
+//THIS FILE RENDERS YOUR FINAL APPLICATION ON A BROWSER.
 
 
